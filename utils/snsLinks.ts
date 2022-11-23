@@ -45,7 +45,7 @@ export const twitterUrl = () => {
 }
 
 export const instagramUrl = () => {
-  return `https://www.instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_ACCOUNT}`
+  return ``//`https://www.instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_ACCOUNT}`
 }
 
 export const discordUrl = () => {

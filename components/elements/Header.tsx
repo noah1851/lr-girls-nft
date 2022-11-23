@@ -31,7 +31,7 @@ const Component: React.FC = () => {
       >
         <Link href="/">
           <Text textStyle="logo" cursor="pointer">
-            NFTDrop
+            L&R girls NFT
           </Text>
         </Link>
         <Flex alignItems="center" gap={8}>
