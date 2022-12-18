@@ -72,7 +72,7 @@ const Component: React.FC<Props> = ({ children }: Props) => {
     })
 
     nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
-      setClaimPrice(String(activeClaimCondition.price))
+      setClaimPrice(ethers.utils.formatUnits(activeClaimCondition.price._hex))
     })
   }, [nftDrop])
 
@@ -105,7 +105,7 @@ const Component: React.FC<Props> = ({ children }: Props) => {
     })
 
     nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
-      setClaimPrice(String(activeClaimCondition.price))
+      setClaimPrice(ethers.utils.formatUnits(activeClaimCondition.price._hex))
     })
   }, [isClaiming])
 
