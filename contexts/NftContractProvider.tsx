@@ -71,9 +71,9 @@ const Component: React.FC<Props> = ({ children }: Props) => {
       setIsLoading(false)
     })
 
-    //nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
-    setClaimPrice('0')//ethers.utils.formatUnits(activeClaimCondition.price._hex))
-    //})
+    nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
+      setClaimPrice(activeClaimCondition.price._hex)
+    })
   }, [nftDrop])
 
   useEffect(() => {
@@ -104,9 +104,9 @@ const Component: React.FC<Props> = ({ children }: Props) => {
       setIsLoading(false)
     })
 
-    //nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
-    setClaimPrice('0')//ethers.utils.formatUnits(activeClaimCondition.price._hex))
-    //})
+    nftDrop?.claimConditions.getActive().then((activeClaimCondition) => {
+      setClaimPrice(activeClaimCondition.price._hex)
+    })
   }, [isClaiming])
 
   const store: Store = {
